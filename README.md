@@ -19,9 +19,10 @@ and saves everything to a **CSV file**.
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/wp-finder.git
-cd wp-finder
+git clone https://github.com/marrQuad/auto-searche-WordPress-sites
+cd auto-searche-WordPress-sites
 pip install -r requirements.txt
+python3 script.py
 ```
 
 ## 🔑 Configuration
