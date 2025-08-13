@@ -4,21 +4,26 @@ import re
 import csv
 from urllib.parse import quote
 
+# Api
 GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 GOOGLE_CSE_ID = "YOUR_CSE_ID"
 
+# Domain zone to search
+DOMAIN_ZONE = ".com" 
+
 QUERIES = [
-    'inurl:/wp-content/ site:.ru',
-    'inurl:/wp-includes/ site:.ru',
-    'inurl:/wp-login.php site:.ru',
-    'intitle:"Welcome to WordPress" site:.ru',
-    'intext:"powered by WordPress" site:.ru',
-    'inurl:/xmlrpc.php site:.ru',
-    'inurl:/wp-json/ site:.ru',
-    'inurl:/wp-admin/ site:.ru',
-    'inurl:/wp-comments-post.php site:.ru',
-    'inurl:/wp-cron.php site:.ru'
+    f'inurl:/wp-content/ site:{DOMAIN_ZONE}',
+    f'inurl:/wp-includes/ site:{DOMAIN_ZONE}',
+    f'inurl:/wp-login.php site:{DOMAIN_ZONE}',
+    f'intitle:"Welcome to WordPress" site:{DOMAIN_ZONE}',
+    f'intext:"powered by WordPress" site:{DOMAIN_ZONE}',
+    f'inurl:/xmlrpc.php site:{DOMAIN_ZONE}',
+    f'inurl:/wp-json/ site:{DOMAIN_ZONE}',
+    f'inurl:/wp-admin/ site:{DOMAIN_ZONE}',
+    f'inurl:/wp-comments-post.php site:{DOMAIN_ZONE}',
+    f'inurl:/wp-cron.php site:{DOMAIN_ZONE}'
 ]
+
 
 OUTPUT_FILE = 'wp_sites_info.csv'
 
