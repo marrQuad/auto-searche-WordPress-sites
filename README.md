@@ -1,6 +1,6 @@
 # 🔍 WordPress Finder
 
-A Python script that automatically searches for **WordPress** sites in the `.ru` zone via **Google Custom Search API**,  
+A Python script that automatically searches for **WordPress** sites in the different `.ru` `.com` and other zone via **Google Custom Search API**,  
 collects a list of domains, checks their **WordPress version**, detects installed **plugins** (if possible),  
 and saves everything to a **CSV file**.
 
